@@ -24,10 +24,15 @@ OTHER
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .CSSochGames video {
   margin-top: 2rem;
   width: 60vw;
+  opacity: 0;
+}
+.CSSochGames.animate video {
+  animation: cardFadeIn 1s both;
 }
 .CSSochGames .container {
   display: flex;
@@ -44,12 +49,19 @@ OTHER
 .CSSochGames .container article {
   margin: auto;
   padding: 1rem;
+  opacity: 0;
+}
+.CSSochGames .container article.animate {
+  animation: textFadeInSlow 1.5s both;
 }
 .CSSochGames .container .top {
   display: flex;
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
+}
+.CSSochGames .container .bottom {
+  position: relative;
 }
 .CSSochGames .container p {
   color: white;
@@ -60,6 +72,49 @@ OTHER
 .CSSochGames img.base-trees {
   width: 100vw;
   margin-top: -3vw;
+}
+/* Floating Assets */
+.CSSochGames img.Uranus, .CSSochGames img.ISS, .CSSochGames img.Neptune, .CSSochGames img.Asteroids {
+  position: absolute;
+  opacity: 0;
+}
+.CSSochGames img.Uranus {
+  top: -2vw;
+  left: 3vw;
+  width: 15vw;
+}
+.CSSochGames.animate img.Uranus {
+  animation: FadeInLeft 1.5s ease-in-out both, 1.5s ease-in-out 1.5s infinite alternate Uranus;
+}
+.CSSochGames img.ISS {
+  top: -2vw;
+  right: 3vw;
+  width: 15vw;
+}
+.CSSochGames.animate img.ISS {
+  animation: FadeInUp 1.5s ease-in-out both, 2s ease-in-out 1.5s infinite alternate ISS;
+}
+.CSSochGames img.Neptune {
+  left: 3vw;
+  width: 15vw;
+  top: 1vw;
+  display: none;
+}
+.CSSochGames .bottom.animate img.Neptune {
+  animation: FadeInLeft 1.5s ease-in-out both, 1.5s ease-in-out 1.5s infinite alternate Neptune;
+}
+.CSSochGames img.Asteroids {
+  right: -2vw;
+  width: 12vw;
+  display: none;
+}
+.CSSochGames img.asteroid2 {
+  width: 8vw;
+  right: 10vw;
+  top: 6vw;
+}
+.CSSochGames .bottom.animate img.Asteroids {
+  animation: FadeInRight 1.5s ease-in-out both, 20s linear 1.5s infinite Asteroids;
 }
 
 .GeneticAlgorithm .container {
@@ -88,6 +143,10 @@ OTHER
   padding: 0 2rem;
   line-height: 1.5;
   font-weight: lighter;
+  opacity: 0;
+}
+.GeneticAlgorithm.animate .container p {
+  animation: textFadeInSlow 1.5s both;
 }
 
 @media all and (min-width: 480px) {
@@ -101,6 +160,9 @@ OTHER
   }
   .CSSochGames .container .top {
     flex-direction: row;
+  }
+  .CSSochGames img.Neptune, .CSSochGames img.Asteroids {
+    display: block;
   }
 }
 @media all and (min-width: 800px) {
