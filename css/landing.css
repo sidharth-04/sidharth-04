@@ -1,0 +1,103 @@
+/* ==================================================
+LANDING
+================================================== */
+#landing {
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem;
+}
+#landing > .left {
+  width: 100%;
+  height: 80vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  text-align: center;
+}
+#landing > .right {
+  display: none;
+}
+#landing header {
+  display: block;
+  margin-bottom: 5vw;
+}
+#landing header h1 {
+  animation: textFadeIn 1s both;
+}
+#landing header h3 {
+  animation: textFadeIn 1s 0.3s both;
+}
+#landing li {
+  color: #767676;
+  margin-bottom: 1rem;
+  font-size: 1.8rem;
+  font-weight: lighter;
+}
+#landing > .left img.laptopView {
+  display: none;
+}
+#landing [data-nav="skills"] {
+  animation: textFadeIn 1s 0.5s both;
+}
+#landing [data-nav="projects"] {
+  animation: textFadeIn 1s 0.6s both;
+}
+#landing [data-nav="other"] {
+  animation: textFadeIn 1s 0.7s both;
+}
+
+@media all and (min-width: 769px) {
+  #landing header h1 {
+    font-size: 10vw;
+  }
+  #landing header h3 {
+    font-size: 4vw;
+  }
+  #landing {
+    padding: 1rem 4rem;
+  }
+  #landing li {
+    font-size: 2.5rem;
+  }
+  #landing article {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+  }
+  #landing > .left img.phoneView {
+    display: none;
+  }
+  #landing > .left img.laptopView {
+    display: block;
+    width: 60%;
+  }
+}
+
+@media all and (min-width: 1080px) {
+  #landing header h1 {
+    font-size: 6vw;
+  }
+  #landing header h3 {
+    font-size: 3vw;
+  }
+  #landing > .left {
+    width: 50%;
+    text-align: left;
+    align-items: flex-start;
+    justify-content: center;
+  }
+  #landing > .left img.phoneView {
+    display: none;
+  }
+  #landing > .left img.laptopView {
+    display: none;
+  }
+  #landing > .right {
+    width: 50%;
+    display: block;
+  }
+}

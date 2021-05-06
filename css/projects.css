@@ -1,0 +1,186 @@
+/* ==================================================
+PROJECTS
+================================================== */
+#projects {
+  margin-bottom: 3rem;
+}
+#projects > article {
+  margin: 0 auto;
+  margin-top: 6vh;
+  width: 75%;
+  background: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  opacity: 0;
+}
+#projects > article.animate {
+  animation: cardFadeIn 1s both;
+}
+#projects > article .left {
+  /* width: 40%; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* padding: 1rem; */
+  position: relative;
+  /* align-items: center; */
+}
+#projects > article .right {
+  /* width: 60%; */
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  /* padding: 20px 20px; */
+  box-sizing: border-box;
+  padding: 1rem;
+}
+#projects > article .right p {
+  font-weight: lighter;
+  font-size: 1rem;
+  text-align: center;
+  font-weight: lighter;
+  color: #585858;
+  margin-bottom: 1rem;
+}
+#projects > article .logo-text {
+  width: 80%;
+  margin: auto !important;
+  margin-top: 1rem !important;
+}
+#projects > article .project-icon {
+  display: none;
+}
+#projects > article a {
+  border-radius: 20px;
+  border: 2px solid white;
+  background: none;
+  padding: 5px 20px;
+  font-size: 1em;
+  font-weight: lighter;
+  color: #767676;
+  transition: 0.3s;
+  margin: 0 auto;
+}
+#projects > article a:hover {
+  transition: 0.3s;
+  background: rgba(255,255,255,0.4);
+}
+
+/* Specific Settings for each Project Card */
+#projects > article.CSSoch {
+  background: linear-gradient(180deg, #D1D526 0%, #B4DBDD 100%);
+}
+#projects > article.CSSoch img {
+  margin: auto;
+  width: 90%;
+}
+#projects > article.DoorStepSchool {
+  background: linear-gradient(180deg, #5338BC 0%, #7362B3 100%);
+}
+#projects > article.DoorStepSchool img.logo-text {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+#projects > article.DoorStepSchool img {
+  margin: auto;
+  width: 45%;
+}
+#projects > article.DoorStepSchool .right p, #projects > article.DoorStepSchool .right a {
+  color: white;
+}
+#projects > article.Gurushiksha {
+  background: #FFFAF0;
+}
+#projects > article.Gurushiksha img.logo-text {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+#projects > article.Gurushiksha img {
+  margin: auto;
+  width: 55%;
+}
+#projects > article.Gurushiksha .right a {
+  border-color: #CBDB87;
+}
+#projects > article.Gurushiksha .right a:hover {
+  background: rgba(203,219,135,0.4)
+}
+#projects > article.Hackathons {
+  background: #8639FF;
+}
+#projects > article.Hackathons img.logo-text {
+  width: 90%;
+  margin-bottom: 1rem;
+}
+#projects > article.Hackathons img {
+  margin: auto;
+  width: 50%;
+}
+#projects > article.Hackathons .right p, #projects > article.Hackathons .right a {
+  color: white;
+}
+
+@media all and (min-width: 650px) {
+  #projects > article .right {
+    padding: 1.4rem;
+  }
+  #projects > article .left img.logo-text {
+    width: 60%;
+  }
+  #projects > article .right p, #projects > article .right a {
+    font-size: 1.4rem;
+  }
+}
+@media all and (min-width: 1000px) {
+  #projects > article {
+    height: 45vh;
+    flex-direction: row;
+  }
+  #projects > article .left {
+    width: 40%;
+    height: 100%;
+  }
+  #projects > article .right {
+    width: 60%;
+  }
+  #projects > article .project-icon {
+    display: block;
+  }
+  #projects > article .right p, #projects > article .right a {
+    font-size: 1.4rem;
+  }
+
+  /* Specific Settings for each Project Card */
+  #projects > article.CSSoch img.logo-text {
+    margin: auto;
+    width: 85%;
+  }
+  #projects > article.DoorStepSchool img.logo-text {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  #projects > article.DoorStepSchool img {
+    margin: auto;
+    width: 40%;
+  }
+  #projects > article.Gurushiksha img.logo-text {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  #projects > article.Gurushiksha img {
+    margin: auto;
+    width: 55%;
+  }
+  #projects > article.Hackathons img.logo-text {
+    width: 90%;
+    margin-bottom: 1rem;
+  }
+  #projects > article.Hackathons img {
+    margin: auto;
+    width: 50%;
+  }
+}

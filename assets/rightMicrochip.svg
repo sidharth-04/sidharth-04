@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="69.3" height="97" viewBox="0 0 69.3 97">
+  <g id="rightMicrochip" transform="translate(68.3 1) rotate(90)">
+    <path id="Path_1912" data-name="Path 1912" d="M32.5,10.6a10.6,10.6,0,1,0-21.2,0,10.65,10.65,0,0,0,6.9,9.9V32.9L0,37.8V67.2H7.3V43.5l18.2-4.9V20.5A10.6,10.6,0,0,0,32.5,10.6Z" transform="translate(62.5 0)" stroke="#55fff2" stroke-width="2"/>
+    <path id="Path_1913" data-name="Path 1913" d="M14.3,20.5a10.65,10.65,0,0,0,6.9-9.9A10.6,10.6,0,1,0,0,10.6a10.65,10.65,0,0,0,6.9,9.9V38.6l18.2,4.9V67.3h7.4V37.8L14.3,32.9Z" transform="translate(0 0)" stroke="#55fff2" stroke-width="2"/>
+    <path id="Path_1914" data-name="Path 1914" d="M10.6,0A10.67,10.67,0,0,0,0,10.6a10.65,10.65,0,0,0,6.9,9.9V67.3h7.3V20.5a10.65,10.65,0,0,0,6.9-9.9A10.458,10.458,0,0,0,10.6,0Z" transform="translate(36.9 0)" stroke="#55fff2" stroke-width="2"/>
+  </g>
+</svg>

@@ -1,0 +1,67 @@
+/* ==================================================
+KEYFRAMES
+================================================== */
+@keyframes popUpAnimate {
+  0% {
+    transform: scale(0);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes rotateScreenLeft {
+  0% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0);
+    transform: rotateY(20deg);
+  }
+}
+@keyframes rotateScreenRight {
+  0% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(0);
+    transform: rotateY(-20deg);
+  }
+}
+@keyframes rotateScreenTop {
+  0% {
+    transform: rotateX(90deg);
+  }
+  100% {
+    transform: rotateX(20deg);
+  }
+}
+@keyframes textFadeIn {
+  0% {
+    transform: translateY(30px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes textFadeInSlow {
+  0% {
+    transform: translateY(80px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+@keyframes cardFadeIn {
+  0% {
+    transform: translateY(100px);
+    opacity: 0;
+  }
+  100% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}

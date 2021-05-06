@@ -1,0 +1,172 @@
+/* ==================================================
+SKILLS
+================================================== */
+#skills {
+  /* height: 100vh; */
+}
+#skills > article {
+  width: 100vw;
+  height: calc(100% - 10vw);
+  box-sizing: border-box;
+  padding: 5vw;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+}
+#skills > article > .left {
+  width: 60%;
+  display: none;
+}
+#skills > article > .right {
+  width: 100%;
+}
+/* Left side */
+.svgHolder {
+  margin-top: 5vh;
+  width: 50vw;
+  height: 27vw;
+  position: relative;
+  visibility: hidden;
+}
+.svgHolder > svg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 1;
+}
+.textHolder {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+}
+.textHolder .screen {
+  position: absolute;
+  width: 28%;
+  height: 30%;
+  padding-top: 1%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.left.screen {
+  left: 0.5%;
+  top: 23%;
+  transform: rotateX(0);
+  transform: rotateY(20deg);
+}
+.top.screen {
+  left: 36%;
+  top: 3%;
+  transform: rotateX(20deg);
+}
+.right.screen {
+  right: 0.5%;
+  top: 23%;
+  transform: rotateX(0);
+  transform: rotateY(-20deg);
+}
+.center.screen {
+  left: 36%;
+  top: 58%;
+}
+.svgHolder > .textHolder .screen p {
+  color: #55FFF2;
+  margin-bottom: 3%;
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 1.3vw;
+  opacity: 0;
+}
+/* Right side */
+#skills > article > .right > p {
+  margin-top: 2rem;
+  font-size: 1.2rem;
+  line-height: 1.5;
+  color: white;
+  text-align: center;
+  opacity: 0;
+  font-weight: lighter;
+}
+/* Animations */
+#skills.animate .svgHolder {
+  visibility: visible;
+}
+#skills.animate #CenterScreen {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: popUpAnimate 0.3s both;
+}
+#skills.animate #CenterWire {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: popUpAnimate 0.4s 0.1s both;
+}
+#skills.animate #LeftWireGroup {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: popUpAnimate 0.4s 0.1s both;
+}
+#skills.animate #RightWireGroup {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: popUpAnimate 0.4s 0.1s both;
+}
+#skills.animate #ScreenLeft {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: rotateScreenLeft 0.5s 0.3s both;
+  transform: rotateX(90deg);
+  animation-fill-mode: forwards;
+}
+#skills.animate #ScreenRight {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: rotateScreenRight 0.5s 0.3s both;
+  transform: rotateX(90deg);
+}
+#skills.animate #ScreenTop {
+  transform-origin: center;
+  transform-box: fill-box;
+  animation: rotateScreenTop 0.5s 0.3s both;
+  transform: rotateX(90deg);
+}
+#skills.animate [data-type="npm"], #skills.animate [data-type="py"], #skills.animate [data-type="js"], #skills.animate [data-type="git"] {
+  animation: textFadeIn 0.5s 0.4s both;
+  opacity: 0;
+}
+#skills.animate [data-type="json"], #skills.animate [data-type="flask"], #skills.animate [data-type="html"], #skills.animate [data-type="gcp"] {
+  animation: textFadeIn 0.5s 0.5s both;
+  opacity: 0;
+}
+#skills.animate [data-type="jq"], #skills.animate [data-type="java"], #skills.animate [data-type="css"], #skills.animate [data-type="firestore"] {
+  animation: textFadeIn 0.5s 0.6s both;
+  opacity: 0;
+}
+#skills.animate > article > .right > p {
+  animation: textFadeInSlow 1.5s both;
+  padding: 0 2rem;
+}
+
+@media all and (min-width: 480px) {
+  #skills.animate > article > .right > p {
+    font-size: 1.3rem;
+  }
+}
+@media all and (min-width: 1000px) {
+  #skills > article > .left {
+    width: 60%;
+    display: block;
+  }
+  #skills > article > .right {
+    width: 40%;
+  }
+  #skills.animate > article > .right > p {
+    font-size: 1.4rem;
+    padding: 0;
+  }
+}

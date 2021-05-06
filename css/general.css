@@ -1,0 +1,67 @@
+/* ==================================================
+GENERAL
+================================================== */
+* {
+  margin: 0;
+  padding: 0;
+}
+a {
+  text-decoration: none;
+}
+li {
+  list-style: none;
+}
+html {
+  background: black;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  background: linear-gradient(117.81deg, #000000 10.91%, #000000 27.37%, #1C5060 83.44%);
+}
+section {
+  width: 100vw;
+  box-sizing: border-box;
+  padding-top: 3rem;
+}
+section > header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+h1 {
+  color: #55FFF2;
+  font-size: calc(2.5rem + 2.4vw);
+  font-weight: 400;
+}
+h2 {
+  background: black;
+  padding: 0.8rem 1rem;
+  font-size: 1.8rem;
+  color: white;
+  font-weight: 400;
+  border: 1px solid #55FFF2;
+}
+h2 > span {
+  color: #55FFF2;
+  font-family: 'IBM Plex Mono', monospace;
+  font-weight: 300;
+  font-size: 0.8em;
+  opacity: 0.3;
+  margin: 0.1em;
+}
+h3 {
+  font-size: calc(1rem + 2vw);
+  color: white;
+  font-weight: 400;
+}
+.microchipEndings {
+  width: 2rem
+}
+@media all and (min-width: 650px) {
+  h2 {
+    font-size: calc(2rem + 1.5vw);
+  }
+  .microchipEndings {
+    width: calc(2rem + 1.5vw);
+  }
+}

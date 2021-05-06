@@ -1,0 +1,128 @@
+/* ==================================================
+OTHER
+================================================== */
+#other {
+}
+#other > article {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  margin-top: 3rem;
+}
+#other h3 {
+  margin: auto;
+  text-align: center;
+  font-size: calc(1rem + 2.5vw);
+}
+#other h4 {
+  color: #55FFF2;
+  font-size: calc(1rem + 1vw);
+}
+
+.CSSochGames {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.CSSochGames video {
+  margin-top: 2rem;
+  width: 60vw;
+}
+.CSSochGames .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 0 5vw;
+  text-align: center;
+}
+.CSSochGames .container article {
+  margin: auto;
+  padding: 1rem;
+}
+.CSSochGames .container .top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+}
+.CSSochGames .container p {
+  color: white;
+  font-size: 1rem;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+.CSSochGames img.base-trees {
+  width: 100vw;
+  margin-top: -3vw;
+}
+
+.GeneticAlgorithm .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  box-sizing: border-box;
+  margin: auto;
+  margin-top: 2rem;
+  padding: 5vw;
+  padding-top: 0;
+  padding-bottom: calc(5vw + 1rem);
+}
+.GeneticAlgorithm .container > div {
+  box-sizing: border-box;
+  width: 400px;
+  height: 400px;
+  display: none;
+}
+.GeneticAlgorithm .container > p {
+  /* margin-top: 2rem; */
+  font-size: 1.2rem;
+  color: white;
+  text-align: center;
+  padding: 0 2rem;
+  line-height: 1.5;
+  font-weight: lighter;
+}
+
+@media all and (min-width: 480px) {
+  .GeneticAlgorithm .container > p {
+    font-size: 1.3rem;
+  }
+}
+@media all and (min-width: 650px) {
+  .CSSochGames .container article {
+    width: 50%;
+  }
+  .CSSochGames .container .top {
+    flex-direction: row;
+  }
+}
+@media all and (min-width: 800px) {
+  .CSSochGames .container p {
+    font-size: 1.2rem;
+  }
+}
+@media all and (min-width: 900px) {
+  .CSSochGames .container p {
+    font-size: 1.4rem;
+  }
+  .GeneticAlgorithm .container div {
+    display: block;
+  }
+  .GeneticAlgorithm .container p {
+    display: block;
+    width: 40%;
+    font-size: 1rem;
+  }
+}
+@media all and (min-width: 1000px) {
+  .GeneticAlgorithm .container p {
+    font-size: 1.2rem;
+  }
+}
