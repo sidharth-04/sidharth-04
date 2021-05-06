@@ -36,7 +36,7 @@ h1 {
 h2 {
   background: black;
   padding: 0.8rem 1rem;
-  font-size: 1.8rem;
+  font-size: calc(1rem + 1vw);
   color: white;
   font-weight: 400;
   border: 1px solid #55FFF2;

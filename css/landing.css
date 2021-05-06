@@ -7,6 +7,7 @@ LANDING
   justify-content: center;
   align-items: center;
   padding: 1rem;
+  box-sizing: border-box;
 }
 #landing > .left {
   width: 100%;

@@ -48,8 +48,8 @@ OTHER
 }
 .CSSochGames .container article {
   margin: auto;
-  padding: 1rem;
   opacity: 0;
+  margin-bottom: 1rem;
 }
 .CSSochGames .container article.animate {
   animation: textFadeInSlow 1.5s both;
@@ -64,6 +64,7 @@ OTHER
   position: relative;
 }
 .CSSochGames .container p {
+  padding: 0.5rem;
   color: white;
   font-size: 1rem;
   line-height: 1.5;
@@ -105,12 +106,12 @@ OTHER
 }
 .CSSochGames img.Asteroids {
   right: -2vw;
-  width: 12vw;
+  width: 10vw;
   display: none;
 }
 .CSSochGames img.asteroid2 {
   width: 8vw;
-  right: 10vw;
+  right: 8vw;
   top: 6vw;
 }
 .CSSochGames .bottom.animate img.Asteroids {
@@ -137,10 +138,10 @@ OTHER
 }
 .GeneticAlgorithm .container > p {
   /* margin-top: 2rem; */
-  font-size: 1.2rem;
+  font-size: 1rem;
   color: white;
   text-align: center;
-  padding: 0 2rem;
+  padding: 0 0.5rem;
   line-height: 1.5;
   font-weight: lighter;
   opacity: 0;
@@ -152,6 +153,11 @@ OTHER
 @media all and (min-width: 480px) {
   .GeneticAlgorithm .container > p {
     font-size: 1.3rem;
+    padding: 0 2rem;
+  }
+  .CSSochGames p {
+    font-size: 1.3rem;
+    padding: 0 2rem;
   }
 }
 @media all and (min-width: 650px) {
@@ -186,5 +192,8 @@ OTHER
 @media all and (min-width: 1000px) {
   .GeneticAlgorithm .container p {
     font-size: 1.2rem;
+  }
+  .CSSochGames p {
+    font-size: 1.4rem;
   }
 }

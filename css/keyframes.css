@@ -69,7 +69,7 @@ KEYFRAMES
 /* Floating Assets */
 @keyframes FadeInLeft {
   0% {
-    transform: translateX(-100px);
+    transform: translateX(-10vw);
     opacity: 0;
   }
   100% {
@@ -79,7 +79,7 @@ KEYFRAMES
 }
 @keyframes FadeInRight {
   0% {
-    transform: translateX(100px);
+    transform: translateX(10vw);
     opacity: 0;
   }
   100% {
@@ -89,7 +89,7 @@ KEYFRAMES
 }
 @keyframes FadeInUp {
   0% {
-    transform: translateY(100px);
+    transform: translateY(10vw);
     opacity: 0;
   }
   100% {
