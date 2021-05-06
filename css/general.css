@@ -7,6 +7,33 @@ GENERAL
 }
 a {
   text-decoration: none;
+  color: inherit;
+  padding: 0.1rem;
+  position: relative;
+}
+a::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  inset: 0 0 0 0;
+  background: rgba(255,255,255,0.3);
+  z-index: -1;
+  transition: transform 0.3s ease;
+  transform: scaleY(0);
+  transform-origin: bottom left;
+}
+a:hover {
+  transition: 0.3s;
+  color: #55FFF2;
+}
+a:hover::before {
+  transform: scaleY(1);
+  border-bottom: 5px solid white;
+  /* transform-origin: bottom left; */
 }
 li {
   list-style: none;
