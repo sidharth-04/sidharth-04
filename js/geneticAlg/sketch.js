@@ -37,9 +37,9 @@ function crossover() {
     var parentB = random(genepool);
     var child = new DNA();
     for (var i = 0; i < cycles; i ++) {
-        //if (i < midpoint) child.genes[i] = parentA.genes[i];
-        //else child.genes[i] = parentB.genes[i];
-        child.genes[i] = parentA.genes[i];
+        if (i < midpoint) child.genes[i] = parentA.genes[i];
+        else child.genes[i] = parentB.genes[i];
+        // child.genes[i] = parentA.genes[i];
     }
 
     // Cause mutations
