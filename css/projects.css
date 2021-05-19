@@ -149,7 +149,7 @@ PROJECTS
     font-size: 1.4rem;
   }
 }
-@media all and (min-width: 1000px) {
+@media all and (min-width: 1200px) {
   #projects > article {
     height: 45vh;
     flex-direction: row;
